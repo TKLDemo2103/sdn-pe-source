@@ -1,0 +1,18 @@
+[
+  {
+    "isbn": "01",
+    "title": "SDN",
+    "author": "Tran Thi To Tam",
+    "category": "Technology",
+    "status": "available",
+    "borrowFeePerDay": 5000
+  },
+  {
+    "isbn": "02",
+    "title": "SWD",
+    "author": "Tran Thi To Tam",
+    "category": "Technology",
+    "status": "available",
+    "borrowFeePerDay": 3000
+  }
+]

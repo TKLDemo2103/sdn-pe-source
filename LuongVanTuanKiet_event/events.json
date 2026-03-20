@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Tech Workshop 2025",
+        "description": "Learn about AI and ML",
+        "date": {
+            "$date": "2025-08-15T00:00:00.000Z"
+        },
+        "location": "Room A101",
+        "maxCapacity": 30,
+        "createdAt": {
+            "$date": "2025-01-01T00:00:00.000Z"
+        }
+    },
+    {
+        "name": "Sports Day",
+        "description": "Annual sports competition",
+        "date": {
+            "$date": "2025-09-10T00:00:00.000Z"
+        },
+        "location": "Stadium",
+        "maxCapacity": 100,
+        "createdAt": {
+            "$date": "2025-01-01T00:00:00.000Z"
+        }
+    },
+    {
+        "name": "Music Festival",
+        "description": "Live performances",
+        "date": {
+            "$date": "2025-10-20T00:00:00.000Z"
+        },
+        "location": "Auditorium",
+        "maxCapacity": 50,
+        "createdAt": {
+            "$date": "2025-01-01T00:00:00.000Z"
+        }
+    }
+]

@@ -1,0 +1,26 @@
+[
+    {
+        "username": "admin1",
+        "password": "$2b$10$ePa/GPin9owRgfsVgMSHK.SPzg0w5qM3xyAohytfYwMpQ28jmFg0u",
+        "role": "admin",
+        "createdAt": {
+            "$date": "2025-01-01T00:00:00.000Z"
+        }
+    },
+    {
+        "username": "student1",
+        "password": "$2b$10$ePa/GPin9owRgfsVgMSHK.SPzg0w5qM3xyAohytfYwMpQ28jmFg0u",
+        "role": "student",
+        "createdAt": {
+            "$date": "2025-01-01T00:00:00.000Z"
+        }
+    },
+    {
+        "username": "student2",
+        "password": "$2b$10$ePa/GPin9owRgfsVgMSHK.SPzg0w5qM3xyAohytfYwMpQ28jmFg0u",
+        "role": "student",
+        "createdAt": {
+            "$date": "2025-01-01T00:00:00.000Z"
+        }
+    }
+]

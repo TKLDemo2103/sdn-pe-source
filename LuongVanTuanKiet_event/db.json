@@ -1,0 +1,65 @@
+{
+    "users": [
+        {
+            "username": "admin1",
+            "password": "$2b$10$ePa/GPin9owRgfsVgMSHK.SPzg0w5qM3xyAohytfYwMpQ28jmFg0u",
+            "role": "admin",
+            "createdAt": "2025-01-01T00:00:00.000Z"
+        },
+        {
+            "username": "student1",
+            "password": "$2b$10$ePa/GPin9owRgfsVgMSHK.SPzg0w5qM3xyAohytfYwMpQ28jmFg0u",
+            "role": "student",
+            "createdAt": "2025-01-01T00:00:00.000Z"
+        },
+        {
+            "username": "student2",
+            "password": "$2b$10$ePa/GPin9owRgfsVgMSHK.SPzg0w5qM3xyAohytfYwMpQ28jmFg0u",
+            "role": "student",
+            "createdAt": "2025-01-01T00:00:00.000Z"
+        }
+    ],
+    "events": [
+        {
+            "name": "Tech Workshop 2025",
+            "description": "Learn about AI and ML",
+            "date": "2025-08-15T00:00:00.000Z",
+            "location": "Room A101",
+            "maxCapacity": 30,
+            "createdAt": "2025-01-01T00:00:00.000Z"
+        },
+        {
+            "name": "Sports Day",
+            "description": "Annual sports competition",
+            "date": "2025-09-10T00:00:00.000Z",
+            "location": "Stadium",
+            "maxCapacity": 100,
+            "createdAt": "2025-01-01T00:00:00.000Z"
+        },
+        {
+            "name": "Music Festival",
+            "description": "Live performances",
+            "date": "2025-10-20T00:00:00.000Z",
+            "location": "Auditorium",
+            "maxCapacity": 50,
+            "createdAt": "2025-01-01T00:00:00.000Z"
+        }
+    ],
+    "registrations": [
+        {
+            "studentId": "student1_id",
+            "eventId": "event1_id",
+            "registrationDate": "2025-07-01T00:00:00.000Z"
+        },
+        {
+            "studentId": "student1_id",
+            "eventId": "event2_id",
+            "registrationDate": "2025-07-05T00:00:00.000Z"
+        },
+        {
+            "studentId": "student2_id",
+            "eventId": "event1_id",
+            "registrationDate": "2025-07-02T00:00:00.000Z"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+[
+    {
+        "_id": {
+            "$oid": "607f1f77bcf86cd799439021"
+        },
+        "name": "MacBook Pro 14",
+        "brand": "Apple",
+        "price": 1999,
+        "stockQuantity": 10,
+        "createdAt": {
+            "$date": "2025-01-01T00:00:00.000Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "607f1f77bcf86cd799439022"
+        },
+        "name": "MacBook Air M2",
+        "brand": "Apple",
+        "price": 1299,
+        "stockQuantity": 15,
+        "createdAt": {
+            "$date": "2025-01-01T00:00:00.000Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "607f1f77bcf86cd799439023"
+        },
+        "name": "ThinkPad X1 Carbon",
+        "brand": "Lenovo",
+        "price": 1499,
+        "stockQuantity": 8,
+        "createdAt": {
+            "$date": "2025-01-01T00:00:00.000Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "607f1f77bcf86cd799439024"
+        },
+        "name": "XPS 15",
+        "brand": "Dell",
+        "price": 1799,
+        "stockQuantity": 12,
+        "createdAt": {
+            "$date": "2025-01-01T00:00:00.000Z"
+        }
+    },
+    {
+        "_id": {
+            "$oid": "607f1f77bcf86cd799439025"
+        },
+        "name": "ROG Zephyrus G14",
+        "brand": "Asus",
+        "price": 1599,
+        "stockQuantity": 6,
+        "createdAt": {
+            "$date": "2025-01-01T00:00:00.000Z"
+        }
+    }
+]

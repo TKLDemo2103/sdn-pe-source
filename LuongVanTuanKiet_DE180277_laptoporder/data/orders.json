@@ -1,0 +1,23 @@
+[
+  {
+    "_id": { "$oid": "707f1f77bcf86cd799439031" },
+    "userId": { "$oid": "507f1f77bcf86cd799439012" },
+    "laptopId": { "$oid": "607f1f77bcf86cd799439021" },
+    "quantity": 1,
+    "orderDate": { "$date": "2025-01-10T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "707f1f77bcf86cd799439032" },
+    "userId": { "$oid": "507f1f77bcf86cd799439012" },
+    "laptopId": { "$oid": "607f1f77bcf86cd799439023" },
+    "quantity": 2,
+    "orderDate": { "$date": "2025-01-15T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "707f1f77bcf86cd799439033" },
+    "userId": { "$oid": "507f1f77bcf86cd799439013" },
+    "laptopId": { "$oid": "607f1f77bcf86cd799439022" },
+    "quantity": 1,
+    "orderDate": { "$date": "2025-01-20T00:00:00.000Z" }
+  }
+]

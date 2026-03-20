@@ -1,0 +1,32 @@
+{
+  "doctors": [
+    {
+      "doctorCode": "DOC001",
+      "fullName": "Dr. Nguyen Van A",
+      "specialty": "Cardiology",
+      "status": "available",
+      "consultationFee": 500000
+    },
+    {
+      "doctorCode": "DOC002",
+      "fullName": "Dr. Tran Thi B",
+      "specialty": "Dermatology",
+      "status": "available",
+      "consultationFee": 300000
+    },
+    {
+      "doctorCode": "DOC003",
+      "fullName": "Dr. Le Van C",
+      "specialty": "Pediatrics",
+      "status": "on_leave",
+      "consultationFee": 400000
+    },
+    {
+      "doctorCode": "DOC004",
+      "fullName": "Dr. Pham Thi D",
+      "specialty": "Neurology",
+      "status": "retired",
+      "consultationFee": 600000
+    }
+  ]
+}

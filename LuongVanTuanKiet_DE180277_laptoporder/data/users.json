@@ -1,0 +1,20 @@
+[
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439011" },
+    "username": "admin",
+    "password": "$2b$10$rQZ8K.XKJ8K8K8K8K8K8K.8K8K8K8K8K8K8K8K8K8K8K8K8K8K8K8",
+    "createdAt": { "$date": "2025-01-01T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439012" },
+    "username": "user1",
+    "password": "$2b$10$rQZ8K.XKJ8K8K8K8K8K8K.8K8K8K8K8K8K8K8K8K8K8K8K8K8K8K8",
+    "createdAt": { "$date": "2025-01-02T00:00:00.000Z" }
+  },
+  {
+    "_id": { "$oid": "507f1f77bcf86cd799439013" },
+    "username": "user2",
+    "password": "$2b$10$rQZ8K.XKJ8K8K8K8K8K8K.8K8K8K8K8K8K8K8K8K8K8K8K8K8K8K8",
+    "createdAt": { "$date": "2025-01-03T00:00:00.000Z" }
+  }
+]
