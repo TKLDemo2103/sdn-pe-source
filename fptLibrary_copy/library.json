@@ -1,0 +1,20 @@
+[
+  {
+    "tableId": "T01",
+    "tableCode": "STD-001",
+    "type": "standard",
+    "capacity": 4,
+    "pricePerHour": 50000,
+    "status": "available",
+    "features": ["wifi", "power_outlet"]
+  },
+  {
+    "tableId": "T02",
+    "tableCode": "VIP-001",
+    "type": "vip",
+    "capacity": 8,
+    "pricePerHour": 100000,
+    "status": "available",
+    "features": ["wifi", "power_outlet", "projector", "whiteboard"]
+  }
+]
