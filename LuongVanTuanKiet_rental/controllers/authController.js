@@ -1,6 +1,10 @@
 const User = require("../models/userModel");
 const jwt = require("jsonwebtoken");
 
+// In-memory token blacklist
+const tokenBlacklist = new Set();
+exports.tokenBlacklist = tokenBlacklist;
+
 // POST /auth/register
 exports.register = async (req, res) => {
   try {
@@ -57,6 +61,23 @@ exports.login = async (req, res) => {
     );
 
     res.json({ message: "Login successful.", token });
+  } catch (error) {
+    res.status(500).json({ message: "Server error.", error: error.message });
+  }
+};
+
+// POST /auth/logout
+exports.logout = (req, res) => {
+  try {
+    const authHeader = req.headers.authorization;
+    if (!authHeader || !authHeader.startsWith("Bearer ")) {
+      return res.status(400).json({ message: "No token provided." });
+    }
+
+    const token = authHeader.split(" ")[1];
+    tokenBlacklist.add(token);
+
+    res.json({ message: "Logout successful." });
   } catch (error) {
     res.status(500).json({ message: "Server error.", error: error.message });
   }

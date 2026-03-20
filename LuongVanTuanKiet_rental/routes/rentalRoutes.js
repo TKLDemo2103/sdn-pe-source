@@ -5,6 +5,7 @@ const authenticate = require("../middleware/authMiddleware");
 
 router.get("/", authenticate, rentalController.getRentals);
 router.post("/", authenticate, rentalController.createRental);
+router.put("/:id", authenticate, rentalController.updateRental);
 router.patch("/:id/return", authenticate, rentalController.returnRental);
 
 module.exports = router;

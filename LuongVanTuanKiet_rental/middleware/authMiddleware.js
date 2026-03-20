@@ -1,4 +1,5 @@
 const jwt = require("jsonwebtoken");
+const { tokenBlacklist } = require("../controllers/authController");
 
 const authenticate = (req, res, next) => {
   const authHeader = req.headers.authorization;
@@ -8,6 +9,11 @@ const authenticate = (req, res, next) => {
 
   try {
     const token = authHeader.split(" ")[1];
+
+    if (tokenBlacklist.has(token)) {
+      return res.status(401).json({ message: "Token has been invalidated." });
+    }
+
     const decoded = jwt.verify(token, process.env.JWT_SECRET);
     req.user = decoded;
     next();

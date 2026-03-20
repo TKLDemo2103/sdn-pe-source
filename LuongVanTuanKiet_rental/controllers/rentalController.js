@@ -119,3 +119,49 @@ exports.searchByDate = async (req, res) => {
     res.status(500).json({ message: "Server error.", error: error.message });
   }
 };
+
+// PUT /rentals/:id
+exports.updateRental = async (req, res) => {
+  try {
+    const rental = await Rental.findById(req.params.id);
+    if (!rental) {
+      return res.status(404).json({ message: "Rental not found." });
+    }
+
+    // Only owner or admin can update
+    if (req.user.role !== "admin" && rental.userId.toString() !== req.user.userId) {
+      return res.status(403).json({ message: "Access denied." });
+    }
+
+    if (rental.status !== "active") {
+      return res.status(400).json({ message: "Only active rentals can be updated." });
+    }
+
+    const { startDate, endDate, quantity } = req.body;
+
+    // If quantity changed, adjust stock
+    if (quantity !== undefined && quantity !== rental.quantity) {
+      const equipment = await Equipment.findById(rental.equipmentId);
+      const diff = quantity - rental.quantity;
+
+      if (diff > 0 && equipment.stockQuantity < diff) {
+        return res.status(400).json({ message: "Not enough stock available." });
+      }
+
+      equipment.stockQuantity -= diff;
+      await equipment.save();
+
+      rental.quantity = quantity;
+      rental.deposit = equipment.depositFee * quantity;
+    }
+
+    if (startDate) rental.startDate = new Date(startDate);
+    if (endDate) rental.endDate = new Date(endDate);
+
+    await rental.save();
+
+    res.json({ message: "Rental updated successfully.", rental });
+  } catch (error) {
+    res.status(500).json({ message: "Server error.", error: error.message });
+  }
+};
